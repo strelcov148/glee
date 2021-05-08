@@ -3,6 +3,154 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 50px 0 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__text {
+  font-size: 36px;
+  line-height: 58px;
+  margin-left: 14px;
+  vertical-align: 6px;
+  color: #436372;
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    text-transform: capitalize;
+    color: #436372;
+    
+
+    & span {
+      vertical-align: -1px;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__link+.user-nav__link {
+    margin-left: 20px;
+  }
+
+  &__link {
+    display: flex;
+    position: relative;
+
+    &-search {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #edf1f4;
+    }
+
+    &-img-search {
+      position: absolute;
+      top: 17px;
+      right: 17px;
+    }
+
+    &-heart {
+      width: 90px;
+      height: 50px;
+      border-radius: 25px 0 0 25px;
+      background-color: #fcd7b6;
+    }
+
+    &-img-heart {
+      position: absolute;
+      top: 20px;
+      left: 41px;
+    }
+
+    &-cart {
+      width: 90px;
+      height: 50px;
+      border-radius: 0 25px 25px 0;
+      background-color: #fcd7b6;
+    }
+
+    &-img-cart {
+      position: absolute;
+      top: 20px;
+      right: 42px;
+    }
+
+    &-stick {
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      left: 89px;
+      top: 9px;
+      background-color: #fff;
+    }
+
+    &-num-heart {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 13px;
+      left: 52px;
+      font-size: 10px;
+      text-align: center;
+      line-height: 16px;
+      color: #000;
+      @extend %dmsans-400;
+    }
+
+    &-num-cart {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 13px;
+      right: 34px;
+      font-size: 10px;
+      text-align: center;
+      line-height: 16px;
+      color: #000;
+      @extend %dmsans-400;
+    }
+
+    &-user {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #a3bbc8;
+    }
+
+    &-img-user {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+}
+
+
+
+
+
+
+
 
 
 @import 'media';
