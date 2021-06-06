@@ -30,3 +30,13 @@ $default: #7b7b7b;
     sans-serif;
   font-weight: 400;
 }
+
+%btn {
+  background-color: #a3bbc8;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 10px 15px;
+  @extend %dmsans-400;
+  font-size: 14px;
+  cursor: pointer;
+}
